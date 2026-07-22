@@ -1,0 +1,68 @@
+ body{
+    background-color:#f0f0f0;
+    font-family:Arial, sans-serif;
+}
+
+/* Hero Section */
+
+.hero{
+    background-color:orange;
+    color:blueviolet;
+    text-align:center;
+    padding:60px;
+}
+
+/* Bootstrap Card */
+
+.card{
+    display:flex;
+    gap:10px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+/* About */
+
+.about{
+    padding:20px;
+}
+
+/* Contact */
+
+.contact{
+    background-color:#222;
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+/* Mobile View */
+
+@media screen and (max-width:600px){
+
+    .hero{
+        padding:30px;
+    }
+
+    .card{
+        display:inline-block;
+    }
+
+    .hero h1{
+        font-size:32px;
+    }
+
+}
+
+/* Print */
+
+@media print and (orientation:landscape){
+
+    p{
+        color:red;
+    }
+
+}
